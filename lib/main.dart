@@ -26,18 +26,11 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          
             Image.network(
               'https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/8dd2b230-813b-4990-b615-6e6137944d43/3840x',
               width: 300,
               height: 300,
               fit: BoxFit.cover,
-              errorBuilder: (context, error, stackTrace) {
-                return const Text(
-                  ' Картинка не загрузилась',
-                  style: TextStyle(color: Colors.red, fontSize: 16),
-                );
-              },
             ),
             const SizedBox(height: 30),
             const Text(
